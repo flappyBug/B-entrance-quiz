@@ -1,7 +1,7 @@
 package com.thoughtworks.capability.gtb.entrancequiz.constants;
 
 public class StudentConstants {
-    public final static int TOTAL_GROUP = 6;
+    public final static int TOTAL_GROUPS = 6;
 
     public final static String[] INITIAL_STUDENT_NAMES = new String[]{
             "成吉思汗",
