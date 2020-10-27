@@ -14,10 +14,10 @@ public class StudentService {
     private List<Student> students;
 
     public StudentService() {
-        resetStudents();
+        reset();
     }
 
-    public void resetStudents() {
+    public void reset() {
         students = IntStream.range(0, INITIAL_STUDENT_NAMES.length)
                 .mapToObj(index -> new Student(index + 1, INITIAL_STUDENT_NAMES[index]))
                 .collect(Collectors.toList());

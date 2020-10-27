@@ -31,7 +31,7 @@ public class StudentControllerTest {
 
     @BeforeEach
     void setUp() {
-        studentService.resetStudents();
+        studentService.reset();
     }
 
     @Test

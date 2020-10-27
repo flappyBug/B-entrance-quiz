@@ -26,6 +26,10 @@ public class GroupService {
         return groups;
     }
 
+    public void reset() {
+        this.groups.clear();
+    }
+
     private List<Student> popRandomNStudents(List<Student> students, int n) {
         List<Student> poppedStudents = new ArrayList<>();
         for (int i = 0; i < n; ++i) {
