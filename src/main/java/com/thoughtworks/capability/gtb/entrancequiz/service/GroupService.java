@@ -5,6 +5,7 @@ import com.thoughtworks.capability.gtb.entrancequiz.domain.StudentGroup;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
@@ -44,6 +45,7 @@ public class GroupService {
             List<Student> groupStudents = popRandomNStudents(students, groupSize);
             groups.add(new StudentGroup(groupName, groupStudents));
         }
+        Collections.reverse(groups);
         return groups;
     }
 }
